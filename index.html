@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pulse — Your Daily AI News Feed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+    <!-- Animated background blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">AI <span class="logo-highlight">Pulse</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#headlines" class="nav-link">Headlines</a>
+                <a href="#infrastructure" class="nav-link">Infrastructure</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#trends" class="nav-link">Trends</a>
+            </div>
+            <div class="nav-date">
+                <span class="live-dot"></span>
+                <span id="current-date">Feb 12, 2026</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="headlines">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="pulse-ring"></span>
+                <span class="badge-text">LIVE FEED</span>
+            </div>
+            <h1 class="hero-title">
+                The AI Revolution<br>
+                <span class="gradient-text">Happening Right Now</span>
+            </h1>
+            <p class="hero-subtitle">
+                Your daily dose of everything AI — from $650B data center buildouts to the tools reshaping how you work.
+                Updated February 2026.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="650">0</span><span class="stat-suffix">B</span>
+                    <span class="stat-label">Big Tech AI Spend</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-suffix">T</span>
+                    <span class="stat-label">5-Year DC Investment</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="90">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">NVIDIA AI Chip Share</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="140">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">AI Video Languages</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item"><span class="ticker-tag hot">HOT</span> Big Tech forecasts $650B in AI data center capex for 2026</div>
+            <div class="ticker-item"><span class="ticker-tag new">NEW</span> NVIDIA skips gaming GPUs in 2026, goes all-in on AI</div>
+            <div class="ticker-item"><span class="ticker-tag breaking">BREAKING</span> Meta's $27B "Hyperion" campus to deliver 2GW of power</div>
+            <div class="ticker-item"><span class="ticker-tag hot">HOT</span> Chrome's Gemini 3 "auto browse" handles multi-step tasks autonomously</div>
+            <div class="ticker-item"><span class="ticker-tag new">NEW</span> Microsoft explores superconducting power cables for data centers</div>
+            <div class="ticker-item"><span class="ticker-tag breaking">BREAKING</span> NVIDIA invests $2B in CoreWeave for next-gen AI factories</div>
+            <div class="ticker-item"><span class="ticker-tag hot">HOT</span> GPT-5 auto-switches between Instant and Thinking modes</div>
+            <div class="ticker-item"><span class="ticker-tag new">NEW</span> Nebius acquires Tavily to power AI agent data retrieval</div>
+        </div>
+    </div>
+
+    <!-- Featured Story -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-image">
+                    <div class="featured-image-bg"></div>
+                    <div class="featured-overlay">
+                        <span class="featured-tag">FEATURED STORY</span>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-meta">
+                        <span class="category-badge infrastructure">Infrastructure</span>
+                        <span class="date-badge">Feb 6, 2026</span>
+                    </div>
+                    <h2 class="featured-title">Big Tech's AI Data Center Spending Hits a Staggering $650 Billion in 2026</h2>
+                    <p class="featured-desc">
+                        The four largest US technology companies have collectively forecast capital expenditures reaching $650 billion this year,
+                        with $3 trillion projected over the next five years. The money is pouring into new data centers, GPU clusters,
+                        and the infrastructure to power them — fundamentally reshaping the energy grid and semiconductor supply chain.
+                    </p>
+                    <div class="featured-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">🏗️</span>
+                            <span>Meta's $27B "Hyperion" campus in Louisiana</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">⚡</span>
+                            <span>Gigawatt-scale data centers coming online</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">💰</span>
+                            <span>NVIDIA $2B investment in CoreWeave</span>
+                        </div>
+                    </div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-06/how-much-is-big-tech-spending-on-ai-computing-a-staggering-650-billion-in-2026" class="read-more-btn" target="_blank" rel="noopener">Read Full Story →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section class="section" id="infrastructure">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🏗️</span>
+                <div>
+                    <h2 class="section-title">Data Center & Infrastructure</h2>
+                    <p class="section-desc">The physical backbone of the AI revolution</p>
+                </div>
+            </div>
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <article class="news-card card-infra">
+                    <div class="card-top">
+                        <span class="category-badge infrastructure">Power Grid</span>
+                        <span class="card-time">Feb 2026</span>
+                    </div>
+                    <h3 class="card-title">AI Sparks a Data Center Power Revolution</h3>
+                    <p class="card-text">
+                        70% of the US power grid is approaching end-of-life as AI workloads demand unprecedented electricity.
+                        The largest data centers now consume over 1GW — enough to power entire cities. Microsoft is exploring
+                        high-temperature superconducting cables as a radical solution.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Energy</span>
+                        <span class="tag">Grid</span>
+                        <span class="tag">Nuclear</span>
+                    </div>
+                    <a href="https://www.datacenterknowledge.com/operations-and-management/2026-predictions-ai-sparks-data-center-power-revolution" class="card-link" target="_blank" rel="noopener">Read more →</a>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="news-card card-infra">
+                    <div class="card-top">
+                        <span class="category-badge infrastructure">GPU</span>
+                        <span class="card-time">Feb 2026</span>
+                    </div>
+                    <h3 class="card-title">NVIDIA Skips Gaming GPUs, Goes All-In on AI Dominance</h3>
+                    <p class="card-text">
+                        In a historic move, NVIDIA has decided to skip releasing any new gaming GPUs in 2026. Gaming revenue
+                        dwindled from 35% in 2022 to just 8%, as a single data center rack of Rubin GPUs generates more profit
+                        than hundreds of thousands of GeForce cards.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">NVIDIA</span>
+                        <span class="tag">Rubin</span>
+                        <span class="tag">Blackwell</span>
+                    </div>
+                    <a href="https://markets.financialcontent.com/stocks/article/tokenring-2026-2-6-nvidia-reports-historic-2026-skip-gaming-gpus-sidelined-in-favor-of-ai-data-center-dominance" class="card-link" target="_blank" rel="noopener">Read more →</a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="news-card card-infra">
+                    <div class="card-top">
+                        <span class="category-badge infrastructure">Hyperscale</span>
+                        <span class="card-time">Jan 2026</span>
+                    </div>
+                    <h3 class="card-title">Hyperscale AI Data Centers Named Top Breakthrough Tech of 2026</h3>
+                    <p class="card-text">
+                        MIT Technology Review named hyperscale AI data centers a top-10 breakthrough technology of 2026.
+                        GPU-centric designs, rack densities reaching 240kW, and liquid cooling are now standard as the era
+                        of general-purpose data centers fades.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">MIT</span>
+                        <span class="tag">Cooling</span>
+                        <span class="tag">Design</span>
+                    </div>
+                    <a href="https://www.technologyreview.com/2026/01/12/1129982/hyperscale-ai-data-centers-energy-usage-2026-breakthrough-technology/" class="card-link" target="_blank" rel="noopener">Read more →</a>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="news-card card-infra">
+                    <div class="card-top">
+                        <span class="category-badge infrastructure">Construction</span>
+                        <span class="card-time">Feb 2026</span>
+                    </div>
+                    <h3 class="card-title">February 2026: New Data Center Developments Worldwide</h3>
+                    <p class="card-text">
+                        Soluna Holdings partners with Metrobloks on a 300MW+ AI campus in Texas. Meta's Ohio "Prometheus"
+                        supercluster reaches 1GW. In Europe, GTR receives $2B from KKR and Oak Hill Capital for expansion.
+                        The global build-out accelerates.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Meta</span>
+                        <span class="tag">Soluna</span>
+                        <span class="tag">Europe</span>
+                    </div>
+                    <a href="https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-february-2026" class="card-link" target="_blank" rel="noopener">Read more →</a>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="news-card card-infra">
+                    <div class="card-top">
+                        <span class="category-badge infrastructure">Community</span>
+                        <span class="card-time">Jan 2026</span>
+                    </div>
+                    <h3 class="card-title">Microsoft Launches "Community-First" AI Infrastructure Initiative</h3>
+                    <p class="card-text">
+                        Microsoft committed to ensuring datacenters don't increase local electricity prices, minimizing
+                        water use, and replenishing more water than consumed. The initiative addresses growing community
+                        concerns about AI's environmental footprint.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Microsoft</span>
+                        <span class="tag">ESG</span>
+                        <span class="tag">Water</span>
+                    </div>
+                    <a href="https://blogs.microsoft.com/on-the-issues/2026/01/13/community-first-ai-infrastructure/" class="card-link" target="_blank" rel="noopener">Read more →</a>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="news-card card-infra">
+                    <div class="card-top">
+                        <span class="category-badge infrastructure">Supply Chain</span>
+                        <span class="card-time">Feb 2026</span>
+                    </div>
+                    <h3 class="card-title">AI Infrastructure Supply Chains Hit Bottleneck</h3>
+                    <p class="card-text">
+                        Memory vendors are prioritizing higher-margin HBM over conventional DRAM and NAND. Longer lead times
+                        for advanced substrates, optics, and networking components add volatility — compounded by
+                        tariff uncertainty heading into mid-2026.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">HBM</span>
+                        <span class="tag">DRAM</span>
+                        <span class="tag">Tariffs</span>
+                    </div>
+                    <a href="https://www.delloro.com/2026-predictions-data-center-infrastructure/" class="card-link" target="_blank" rel="noopener">Read more →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section section-alt" id="tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🛠️</span>
+                <div>
+                    <h2 class="section-title">AI Tools You Can Use Today</h2>
+                    <p class="section-desc">Productivity-boosting AI tools for your daily workflow</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <!-- Tool 1 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-purple">
+                        <span class="tool-icon">🤖</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">AI Assistants</span>
+                        <h3 class="tool-name">ChatGPT (GPT-5)</h3>
+                        <p class="tool-desc">New unified system auto-switches between "Instant" fast mode and deep "Thinking" mode. The most capable general-purpose AI yet.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Writing</span>
+                            <span class="use-case">Coding</span>
+                            <span class="use-case">Analysis</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 2 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-orange">
+                        <span class="tool-icon">🧠</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">AI Assistants</span>
+                        <h3 class="tool-name">Claude (Opus 4.6)</h3>
+                        <p class="tool-desc">Anthropic's powerhouse for developers and analysts. Artifacts UI renders code, diagrams, and React components side-by-side.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Development</span>
+                            <span class="use-case">Analysis</span>
+                            <span class="use-case">Research</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 3 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-blue">
+                        <span class="tool-icon">💼</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">Productivity</span>
+                        <h3 class="tool-name">Microsoft Copilot</h3>
+                        <p class="tool-desc">Wave 2 update brings Copilot Pages for multiplayer AI collaboration, deep Excel+Python integration, and custom Copilot Agents.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Office</span>
+                            <span class="use-case">Teams</span>
+                            <span class="use-case">Automation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 4 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-green">
+                        <span class="tool-icon">🌐</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">Browser</span>
+                        <h3 class="tool-name">Chrome + Gemini 3</h3>
+                        <p class="tool-desc">Groundbreaking "auto browse" feature handles complex multi-step tasks — booking travel, scheduling appointments — entirely on your behalf.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Browsing</span>
+                            <span class="use-case">Tasks</span>
+                            <span class="use-case">Search</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 5 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-red">
+                        <span class="tool-icon">🎥</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">Video</span>
+                        <h3 class="tool-name">HeyGen</h3>
+                        <p class="tool-desc">Redefining corporate communication with AI avatars, instant video translation, and avatar cloning across 140+ languages.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Video</span>
+                            <span class="use-case">Translation</span>
+                            <span class="use-case">Marketing</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 6 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-pink">
+                        <span class="tool-icon">🎨</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">Creative</span>
+                        <h3 class="tool-name">Midjourney v7</h3>
+                        <p class="tool-desc">The gold standard for visual AI. v7 dramatically improves text rendering, photorealism, and coherent multi-subject scenes.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Design</span>
+                            <span class="use-case">Art</span>
+                            <span class="use-case">Branding</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 7 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-yellow">
+                        <span class="tool-icon">🔊</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">Audio</span>
+                        <h3 class="tool-name">ElevenLabs</h3>
+                        <p class="tool-desc">Leading voice synthesis producing emotionally expressive, natural speech for audiobooks, podcasts, narration, and accessibility.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Voice</span>
+                            <span class="use-case">Podcasts</span>
+                            <span class="use-case">A11y</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 8 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-cyan">
+                        <span class="tool-icon">📋</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">Workspace</span>
+                        <h3 class="tool-name">ClickUp + Brain</h3>
+                        <p class="tool-desc">One-stop workspace with Autopilot Agents — AI teammates that handle recurring work like reports, status updates, and custom workflows.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">PM</span>
+                            <span class="use-case">Agents</span>
+                            <span class="use-case">Docs</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tool 9 -->
+                <article class="tool-card">
+                    <div class="tool-icon-wrap tool-teal">
+                        <span class="tool-icon">📓</span>
+                    </div>
+                    <div class="tool-info">
+                        <span class="tool-category">Research</span>
+                        <h3 class="tool-name">NotebookLM</h3>
+                        <p class="tool-desc">Google's hit tool converts uploaded documents into engaging "podcast-style" dialogues between two AI hosts via Audio Overviews.</p>
+                        <div class="tool-use-cases">
+                            <span class="use-case">Research</span>
+                            <span class="use-case">Audio</span>
+                            <span class="use-case">Learning</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trends Section -->
+    <section class="section" id="trends">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🔮</span>
+                <div>
+                    <h2 class="section-title">Key Trends Shaping 2026</h2>
+                    <p class="section-desc">The forces driving the next wave of AI transformation</p>
+                </div>
+            </div>
+            <div class="trends-grid">
+                <div class="trend-card trend-1">
+                    <div class="trend-number">01</div>
+                    <h3 class="trend-title">Liquid Cooling Goes Mainstream</h3>
+                    <p class="trend-desc">Rack densities hitting 240kW per rack in 2026 — rising to 1MW by 2028 — make liquid cooling unavoidable. Direct-to-chip and immersion tanks are now standard specs.</p>
+                    <div class="trend-visual">
+                        <div class="trend-bar" style="--bar-width: 85%"></div>
+                        <span class="trend-stat">240kW/rack</span>
+                    </div>
+                </div>
+
+                <div class="trend-card trend-2">
+                    <div class="trend-number">02</div>
+                    <h3 class="trend-title">Agentic AI Takes Over</h3>
+                    <p class="trend-desc">Tools like n8n and Copilot Studio enable AI agents that actively perform work — sending emails, updating CRMs, and managing workflows with minimal human input.</p>
+                    <div class="trend-visual">
+                        <div class="trend-bar" style="--bar-width: 92%"></div>
+                        <span class="trend-stat">Top trend</span>
+                    </div>
+                </div>
+
+                <div class="trend-card trend-3">
+                    <div class="trend-number">03</div>
+                    <h3 class="trend-title">Edge AI Infrastructure</h3>
+                    <p class="trend-desc">Placing AI workloads physically closer to users mitigates latency and boosts performance. Edge deployments are becoming critical for real-time applications.</p>
+                    <div class="trend-visual">
+                        <div class="trend-bar" style="--bar-width: 70%"></div>
+                        <span class="trend-stat">Rising fast</span>
+                    </div>
+                </div>
+
+                <div class="trend-card trend-4">
+                    <div class="trend-number">04</div>
+                    <h3 class="trend-title">Reasoning Over Retrieval</h3>
+                    <p class="trend-desc">Models like OpenAI's o1 and o3 prioritize extended "thinking time" over simple retrieval, enabling deeper analysis and more reliable multi-step problem solving.</p>
+                    <div class="trend-visual">
+                        <div class="trend-bar" style="--bar-width: 88%"></div>
+                        <span class="trend-stat">Paradigm shift</span>
+                    </div>
+                </div>
+
+                <div class="trend-card trend-5">
+                    <div class="trend-number">05</div>
+                    <h3 class="trend-title">Digital Twins for Data Centers</h3>
+                    <p class="trend-desc">Operators deploy digital twins to simulate complex systems, optimize cooling, predict failures, and achieve unprecedented operational efficiency.</p>
+                    <div class="trend-visual">
+                        <div class="trend-bar" style="--bar-width: 65%"></div>
+                        <span class="trend-stat">Expanding</span>
+                    </div>
+                </div>
+
+                <div class="trend-card trend-6">
+                    <div class="trend-number">06</div>
+                    <h3 class="trend-title">AI Robotics in Data Centers</h3>
+                    <p class="trend-desc">Robotics now handle security monitoring, server installation, maintenance, cable organization, drive replacement, and liquid cooling optimization in modern facilities.</p>
+                    <div class="trend-visual">
+                        <div class="trend-bar" style="--bar-width: 58%"></div>
+                        <span class="trend-stat">Emerging</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2 class="cta-title">Stay Ahead of the Curve</h2>
+                    <p class="cta-desc">The AI landscape moves fast. This page curates the most important stories so you don't have to.</p>
+                    <div class="cta-sources">
+                        <span class="source-tag">Bloomberg</span>
+                        <span class="source-tag">MIT Tech Review</span>
+                        <span class="source-tag">Data Center Knowledge</span>
+                        <span class="source-tag">Zapier</span>
+                        <span class="source-tag">Fortune</span>
+                        <span class="source-tag">Google Blog</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">AI <span class="logo-highlight">Pulse</span></span>
+                    <p class="footer-tagline">Your daily AI news dashboard</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#headlines">Headlines</a>
+                    <a href="#infrastructure">Infrastructure</a>
+                    <a href="#tools">Tools</a>
+                    <a href="#trends">Trends</a>
+                </div>
+                <div class="footer-sources">
+                    <p class="footer-sources-title">Sources</p>
+                    <a href="https://www.bloomberg.com/news/articles/2026-02-06/how-much-is-big-tech-spending-on-ai-computing-a-staggering-650-billion-in-2026" target="_blank" rel="noopener">Bloomberg</a>
+                    <a href="https://www.technologyreview.com/2026/01/12/1129982/hyperscale-ai-data-centers-energy-usage-2026-breakthrough-technology/" target="_blank" rel="noopener">MIT Tech Review</a>
+                    <a href="https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-february-2026" target="_blank" rel="noopener">Data Center Knowledge</a>
+                    <a href="https://zapier.com/blog/best-ai-productivity-tools/" target="_blank" rel="noopener">Zapier</a>
+                    <a href="https://fortune.com/2026/01/27/data-centers-ai-meta-microsoft-google-amazon-openai-gpu/" target="_blank" rel="noopener">Fortune</a>
+                    <a href="https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/" target="_blank" rel="noopener">Google Blog</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Curated with AI. Built with code. Updated February 2026.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
